@@ -5,4 +5,4 @@ metadata:
 spec:
   parameters:
     namespace: production
-    image: docker.io/vfarcic/backendapp:0.0.0
+    image: docker.io/tapasmishra/backendapp:0.0.2
