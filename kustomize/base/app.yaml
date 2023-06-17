@@ -1,0 +1,22 @@
+---
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  annotations:
+    gitHubOrg: tapasmishraarcgitops
+    gitHubRepo: backendapp
+  name: backendapp
+spec:
+  id: backendapp
+  compositionSelector:
+    matchLabels:
+      type: backend-db-google
+      location: local
+  parameters:
+    namespace: development
+    image: docker.io/tapasmishra/backendapp:latest
+    port: 8080
+    host: coe.org
+    db:
+      version: "13"
+      size: medium

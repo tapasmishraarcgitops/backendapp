@@ -1,0 +1,8 @@
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  name: backendapp
+spec:
+  parameters:
+    namespace: production
+    image: docker.io/vfarcic/backendapp:0.0.0
