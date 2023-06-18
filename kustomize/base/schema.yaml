@@ -8,7 +8,7 @@ spec:
   connection:
     postgres:
       host:
-        value: postgresql
+        value: 34.172.19.222
       user:
         value: postgres
       password:
