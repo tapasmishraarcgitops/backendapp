@@ -16,8 +16,8 @@ spec:
           secretKeyRef:
             name: postgresql
             key: postgres-password
-      port:
-        value: "5432"
+      # port:
+      #   value: "80"
       dbname:
         value: backendapp
 ---
