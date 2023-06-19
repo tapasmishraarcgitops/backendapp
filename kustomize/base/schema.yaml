@@ -8,7 +8,7 @@ spec:
   connection:
     postgres:
       uri:
-        value: postgres://postgres:Reneeka@23@34.172.19.222/backendapp
+        value: postgres://postgres:Reneeka@23@34.172.19.222:80/backendapp
       # host:
       #   value: 34.172.19.222
       # user:
