@@ -7,19 +7,21 @@ spec:
   immediateDeploy: true
   connection:
     postgres:
-      host:
-        value: 34.172.19.222
-      user:
-        value: postgres
-      password:
-        valueFrom:
-          secretKeyRef:
-            name: postgresql
-            key: postgres-password
-      # port:
-      #   value: "80"
-      dbname:
-        value: backendapp
+      uri:
+        value: postgres://postgres:Reneeka@23@34.172.19.222/backendapp
+      # host:
+      #   value: 34.172.19.222
+      # user:
+      #   value: postgres
+      # password:
+      #   valueFrom:
+      #     secretKeyRef:
+      #       name: postgresql
+      #       key: postgres-password
+      # # port:
+      # #   value: "80"
+      # dbname:
+      #   value: backendapp
 ---
 apiVersion: schemas.schemahero.io/v1alpha4
 kind: Table
